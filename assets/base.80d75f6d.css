@@ -106,7 +106,26 @@ body {
   color: #fff;
   position: relative;
 }
-
+body.fullscreen {
+  background-image: url('./background.jpg');
+  min-height: 100vh;
+  /* width: 2540px; */
+  width: 100%;
+  font-family: 'Octosquares-Regular';
+  color: #fff;
+  position: relative;
+}
+@media all and (display-mode: fullscreen) {
+  html {
+    background: url('./background.jpg') no-repeat center center / cover;
+    min-height: 100vh;
+    /* width: 2540px; */
+    width: 100%;
+    font-family: 'Octosquares-Regular';
+    color: #fff;
+    position: relative;
+  }
+}
 #app {
   position: relative;
   height: 100%;
